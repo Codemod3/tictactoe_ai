@@ -1,5 +1,5 @@
 <h1 align center>  Tictactoe project </h1>
-## This program uses the minimax algorithm to make sure the computer never loses<br>
+<h2>This program uses the minimax algorithm to make sure the computer never loses<br></h2>
 
 ## Understanding
 There are two main files in this project: runner.py and tictactoe.py. tictactoe.py contains all of the logic for playing the game, and for making optimal moves. runner.py contains all of the code to run the graphical interface for the game. Once you have run the runner.py you will be able to play against your AI! <br>
@@ -24,11 +24,12 @@ The result function takes a board and an action as input, and returns a new boar
 <li>The returned board is the board that would result from taking the original input board, and letting the player whose turn it is make their move at the cell indicated by the input action.</li>
 <li>Importantly, the original board is left unmodified: since Minimax will ultimately require considering many different board states during its computation. This means that simply updating a cell in board itself is not a correct implementation of the result function. So a deep copy of the board is made.
 </li>
-</ul>
+</ul><br>
+
 <ul>The winner function accepts a board as input, and return the winner of the board if there is one.
 <li>If the X player has won the game, function returns X. If the O player has won the game, function returns O.</li>
 <li>One can win the game with three of their moves in a row horizontally, vertically, or diagonally.</li>
-<li>If there is no winner of the game (either because the game is in progress, or because it ended in a tie), the function returns None.</li>
+<li>If there is no winner of the game (either because the game is in progress, or because it ended in a tie), the function returns None.</li></ul>
 <br>
 <ul>  
 The terminal function should accept a board as input, and return a boolean value indicating whether the game is over.
